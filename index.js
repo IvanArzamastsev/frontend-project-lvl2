@@ -24,6 +24,5 @@ export default (path1, path2) => {
         }
         _.has(file1, key) === true ? result += `-${key}: ${file1[key]}\n` : result += `+${key}: ${file2[key]}\n`;
     }
-    result += '}';
-    return result;
+    return result += '}';
 };
